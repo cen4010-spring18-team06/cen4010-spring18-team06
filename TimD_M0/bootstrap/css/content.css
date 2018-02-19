@@ -1,0 +1,199 @@
+    .Logo:Hover{
+        text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+    }
+
+    h1 {
+        color: white;
+        text-shadow: -4px 0 5px blue, 0 4px 5px blue, 4px 0 5px blue, 0 -4px 5px blue;          
+    }
+    h6{
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    li:hover{
+        transition: 
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px whit;
+    }
+    h5{
+        font-size: 25px;
+        color: royalblue;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+    .smtxt{
+        font-size: 28px;
+        color: white;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+    p{
+        color: whitesmoke;
+        font-size: 20px;
+        text-shadow: 2px 2px 4px black;
+    }
+    .dp-item{
+        color: whitesmoke;
+        font-size: 15px;
+    }
+    .create_acct{
+        margin-bottom: 100px;
+        padding-left: 20px;
+    }
+    .dropdown-menu{
+        background-color: white;
+    }
+    .navbar-btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    .navbar-btn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: -2px;
+        right: -20px;
+        transition: 0.5s;
+    }
+    .navbar-btn:hover span {
+        padding-right: 25px;
+    }
+    .navbar-btn:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    .carousel-control{
+        width: 10%;
+    }
+    .navbar-text{
+        font-size: 15px;
+        margin: auto;
+        padding-right: 10px;
+    }
+    ol.breadcrumb {
+        list-style: none;
+        background: linear-gradient(to right, white , transparent);
+    }
+    ol.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+    }
+    ol.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+    }
+    ol.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+    }
+    ol.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;   
+        background: #d3d3d3;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%; 
+        background: #4CAF50;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+    .container-img {
+        position: relative;
+        width: 75%;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+    .container-img:hover .image {
+        opacity: 0.3;
+    }
+
+    .container-img:hover .middle {
+        opacity: 1;
+    }
+    .inner-addon { 
+        position: relative; 
+    }
+    .inner-addon .glyphicon {
+        position: absolute;
+        padding: 5px;
+        pointer-events: none;
+    }
+    .left-addon .glyphicon{ 
+        left:  0px;
+    }
+    .right-addon .glyphicon{
+        right: 0px;
+    }
+    .left-addon input{
+        padding-left:  30px;
+    }
+    .right-addon input{
+        padding-right: 30px;
+    }
+    input[type=text]{
+        width: 130px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    input[type=text]:focus{
+        width: 100%;
+    }
+    .modal-open{
+        overflow-x: scroll;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    @media only screen and (max-width: 768px){
+        [class*=navbar-inverse]{           
+        }
+        [class=navbar-text]{
+            display: none;
+        }
+        ol.breadcrumb{
+            background-color: white;
+        }
+        ol.breadcrumb li{
+            display:block;
+        }
+    }
